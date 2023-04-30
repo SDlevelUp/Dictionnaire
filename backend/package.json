@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mongoose": "^7.1.0",
+    "node-sass": "^8.0.0",
+    "npm": "^9.6.5"
+  },
+  "name": "dictionnaire",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "author": "Sarah Berri",
+  "license": "ISC",
+  "description": "API Dictionnaire",
+  "keywords": []
+}
