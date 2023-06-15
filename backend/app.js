@@ -13,14 +13,15 @@ app.use((req, res, next) => {
 });
 
 
-mongoose.connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true, useUnifiedTopology: true
-}).then(() => {
+mongoose.connect('mongodb+srv://ApiDico:dicodico@clusterdico.lbb7ghc.mongodb.net/?retryWrites=true&w=majority',
+    {
+        useNewUrlParser: true, useUnifiedTopology: true
+    }).then(() => {
 
-    console.log("Connexion succesful");
-}).catch((error) => {
-    console.log(error);
-});
+        console.log("Connexion successful");
+    }).catch((error) => {
+        console.log(error);
+    });
 
 app.use(bodyParser.json());
 app.use('/api/definitions/', RouteDefinitions)
