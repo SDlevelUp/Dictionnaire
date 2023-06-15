@@ -13,7 +13,7 @@ app.use((req, res, next) => {
 });
 
 
-mongoose.connect('mongodb+srv://ApiDico:dicodico@clusterdico.lbb7ghc.mongodb.net/?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://sarahberri:<password>@dico.jadugee.mongodb.net/',
     {
         useNewUrlParser: true, useUnifiedTopology: true
     }).then(() => {
